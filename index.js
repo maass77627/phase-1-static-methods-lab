@@ -24,12 +24,12 @@ class Formatter {
       "by",
       "from"
     ]
-    let completesentence = []
+      let completesentence = []
       let newstring = string.split(" ")
-    let firstword = newstring[0].charAt(0).toUpperCase() + newstring[0].slice(1)
-    completesentence.push(firstword)
-   let newerstring = newstring.slice(1)
-     newerstring.forEach((word) => {
+      let firstword = newstring[0].charAt(0).toUpperCase() + newstring[0].slice(1)
+      completesentence.push(firstword)
+      let newerstring = newstring.slice(1)
+      newerstring.forEach((word) => {
       if (exceptions.includes(word)) {
         completesentence.push(word)
       } else {
